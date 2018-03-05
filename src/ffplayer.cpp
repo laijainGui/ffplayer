@@ -794,7 +794,7 @@ void* player_open_hls(char *m3u8, char *key, void *appdata, PLAYER_INIT_PARAMS *
     avformat_network_init();
 
     // setup log
-    av_log_set_level   (AV_LOG_TRACE);
+    av_log_set_level   (AV_LOG_WARNING);
     av_log_set_callback(avlog_callback);
 
     // alloc player context
